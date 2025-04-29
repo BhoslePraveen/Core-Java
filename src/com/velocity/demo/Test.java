@@ -11,7 +11,9 @@ public class Test {
 		employees.add(new Employee("Vikas", "Mumbai", 27, 160000));
 		employees.add(new Employee("Reena", "Nashik", 28, 170000));
 
-		System.out.println(employees);
+		for (Employee emp : employees) {
+			System.out.println(emp);
+		}
 
 	}
 
