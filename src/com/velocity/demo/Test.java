@@ -14,8 +14,6 @@ public class Test {
 		for (Employee emp : employees) {
 			System.out.println(emp);
 		}
-		
-		System.out.println("End");
 
 	}
 
