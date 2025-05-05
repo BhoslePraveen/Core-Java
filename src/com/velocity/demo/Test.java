@@ -8,13 +8,11 @@ public class Test {
 	public static void main(String[] args) {
 		List<Employee> employees = new ArrayList<Employee>();
 		employees.add(new Employee("Ravi", "Pune", 26, 150000));
-		employees.add(new Employee("Vikas", "Mumbai", 27, 160000));
 		employees.add(new Employee("Reena", "Nashik", 28, 170000));
+		employees.add(new Employee("Shonu", "Hyderbad", 27, 180000));
+		employees.add(new Employee("Bhaskar", "Pune", 26, 140000));
 
-		for (Employee emp : employees) {
-			System.out.println(emp);
-		}
-
+		employees.forEach(emp -> System.out.println(emp));
 	}
 
 }
