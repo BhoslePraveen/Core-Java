@@ -15,7 +15,7 @@ public class Demo1 {
 
 		ListIterator<Employee> itr = employees.listIterator();
 		while (itr.hasNext()) {
-			System.out.println(itr.next());
+			System.out.print(itr.next());
 		}
 		
 		// Lead
