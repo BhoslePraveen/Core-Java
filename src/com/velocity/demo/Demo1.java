@@ -17,6 +17,9 @@ public class Demo1 {
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
+		
+		// Lead
+		employees.forEach(e -> System.out.println(e.getEmpName()));
 
 	}
 
