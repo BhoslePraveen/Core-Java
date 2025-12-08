@@ -19,7 +19,10 @@ public class Demo1 {
 		}
 		
 		// Lead
-		employees.forEach(e -> System.out.println(e.getEmpName()));
+		//employees.forEach(e -> System.out.println(e.getEmpName()));
+		for(Employee emp:employees){
+			System.out.println(emp);
+		}
 
 	}
 
