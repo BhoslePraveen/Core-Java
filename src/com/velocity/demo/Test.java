@@ -15,8 +15,13 @@ public class Test {
 
 		Iterator<Employee> itr = employees.iterator();
 		while (itr.hasNext()) {
-			System.out.println(itr.next()); 	
+			System.out.println(itr.next());
 		}
-	}
 
+		for (Employee emp : employees) {
+			int age = emp.getAge();
+			System.out.println("Age of employee :" + age);
+		}
+
+	}
 }
