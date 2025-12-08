@@ -1,6 +1,7 @@
 package com.velocity.demo;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Test1 {
@@ -11,8 +12,9 @@ public class Test1 {
 		students.add(new Student(102, "Abhay", "11", "Mumbai"));
 		students.add(new Student(103, "Depali", "11", "Bangalore"));
 
-		for (Student stu : students) {
-			System.out.println(stu);
+		Iterator<Student> itr = students.iterator();
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
 		}
 
 	}
