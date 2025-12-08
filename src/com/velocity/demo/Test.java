@@ -1,6 +1,7 @@
 package com.velocity.demo;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Test {
@@ -12,10 +13,15 @@ public class Test {
 		employees.add(new Employee("Shonu", "Hyderbad", 27, 180000));
 		employees.add(new Employee("Bhaskar", "Pune", 26, 140000));
 
-		employees.forEach(emp -> System.out.println(emp));
-		for(Employee emp : employees){
-			System.out.println(emp);
+		Iterator<Employee> itr = employees.iterator();
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
 		}
-	}
 
+		for (Employee emp : employees) {
+			int age = emp.getAge();
+			System.out.println("Age of employee :" + age);
+		}
+
+	}
 }
