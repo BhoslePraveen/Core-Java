@@ -13,8 +13,10 @@ public class Test {
 		employees.add(new Employee("Bhaskar", "Pune", 26, 140000));
 
 		for(Employee emp:employees){
-			System.out.println(emp);
+			int age = emp.getAge();
+			System.out.println("Age of employee :" + age);  
 		}
+		
 	}
 
 }
