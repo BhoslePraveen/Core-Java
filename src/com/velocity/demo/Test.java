@@ -12,7 +12,9 @@ public class Test {
 		employees.add(new Employee("Shonu", "Hyderbad", 27, 180000));
 		employees.add(new Employee("Bhaskar", "Pune", 26, 140000));
 
-		employees.forEach(emp -> System.out.println(emp));
+		for(Employee emp:employees){
+			System.out.println(emp);
+		}
 	}
 
 }
